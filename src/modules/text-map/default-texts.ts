@@ -25,6 +25,16 @@ const map: ITextMapConfig = {
   [TEXT_LABELS.EXIT_FULL_SCREEN_TOOLTIP]: 'Exit Full Screen',
   [TEXT_LABELS.DOWNLOAD_BUTTON_LABEL]: 'Download video',
   [TEXT_LABELS.DOWNLOAD_BUTTON_TOOLTIP]: 'Download Video',
+  [TEXT_LABELS.BUY_BUTTON_DEFAULT_LABEL]: 'Buy this video',
+  [TEXT_LABELS.BUY_BUTTON_DEFAULT_TOOLTIP]: 'Buy this video',
+  [TEXT_LABELS.SHARE_BUTTON_LABEL]: 'Share this video',
+  [TEXT_LABELS.SHARE_BUTTON_TOOLTIP]: 'Share this video',
+  [TEXT_LABELS.INFO_BUTTON_LABEL]: 'Check information about this video',
+  [TEXT_LABELS.INFO_BUTTON_TOOLTIP]: 'Check information about this video',
+  [TEXT_LABELS.CARDS_BUTTON_LABEL]: 'Show cards for this video',
+  [TEXT_LABELS.CARDS_BUTTON_TOOLTIP]: 'Show cards for this video',
+  [TEXT_LABELS.COMMENTS_BUTTON_LABEL]: 'Show comments for this video',
+  [TEXT_LABELS.COMMENTS_BUTTON_TOOLTIP]: 'Show comments for this video',
 };
 
 export default map;

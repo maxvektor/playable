@@ -1,4 +1,8 @@
-<div class="${props.styles.button}">
+<div class="${props.styles.buttonWrapper}">
+  <button class="${props.styles.button} ${props.styles.controlButton}"
+          aria-label="${props.texts.label}"
+          type="button"
+          tabindex="0">
   <div class="${props.styles.icon}">
     <svg xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -11,4 +15,5 @@
         </g>
     </svg>
   </div>
+  </button>
 </div>

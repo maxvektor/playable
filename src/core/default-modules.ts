@@ -31,6 +31,7 @@ import VolumeControl from '../modules/ui/controls/volume/volume';
 import FullScreenControl from '../modules/ui/controls/full-screen/full-screen';
 import Logo from '../modules/ui/controls/logo/logo';
 import DownloadButton from '../modules/ui/controls/download/download';
+import ChromecaststButton from '../modules/ui/controls/chromecast/chromecast';
 
 import PreviewService from '../modules/ui/preview-service/preview-service';
 import PreviewThumbnail from '../modules/ui/preview-thumbnail/preview-thumbnail';
@@ -73,6 +74,7 @@ export const modules: { [id: string]: any } = {
   FullScreenControl,
   Logo,
   DownloadButton,
+  ChromecaststButton,
 
   PreviewService,
   PreviewThumbnail,

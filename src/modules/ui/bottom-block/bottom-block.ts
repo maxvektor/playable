@@ -11,6 +11,7 @@ import { IVolumeControl } from '../controls/volume/types';
 import { IFullScreenControl } from '../controls/full-screen/types';
 import { ILogoControl } from '../controls/logo/types';
 import { IDownloadButton } from '../controls/download/types';
+import { IChromecaststButton } from '../controls/chromecast/types';
 
 import {
   IBottomBlock,
@@ -27,6 +28,7 @@ interface IDependencies {
   fullScreenControl: IFullScreenControl;
   logo: ILogoControl;
   downloadButton: IDownloadButton;
+  chromecastButton: IChromecaststButton;
 }
 
 export default class BottomBlock implements IBottomBlock {
@@ -41,6 +43,7 @@ export default class BottomBlock implements IBottomBlock {
     'logo',
     'downloadButton',
     'eventEmitter',
+    'chromecastButton',
   ];
 
   private _eventEmitter: IEventEmitter;
@@ -72,6 +75,7 @@ export default class BottomBlock implements IBottomBlock {
       fullScreenControl,
       logo,
       downloadButton,
+      chromecastButton,
     } = dependencies;
 
     return {
@@ -82,6 +86,7 @@ export default class BottomBlock implements IBottomBlock {
       fullScreen: fullScreenControl.getElement(),
       download: downloadButton.getElement(),
       logo: logo.getElement(),
+      chromecast: chromecastButton.getElement(),
     };
   }
 

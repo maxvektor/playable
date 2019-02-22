@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script>
-    window['__onGCastApiAvailable'] = function(isAvailable) {
-      if (isAvailable) {
-        initializeCastApi();
-      }
-    };
-
-    initializeCastApi = function() {
-      cast.framework.CastContext.getInstance().setOptions({
-        receiverApplicationId:
-        chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID
-      });
-    };
-  </script>
-  <script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
   <meta charset="UTF-8">
   <title>Video Player</title>
   <style>

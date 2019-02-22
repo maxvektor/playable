@@ -7,6 +7,7 @@ import ThemeService from '../modules/ui/core/theme';
 import TextMap from '../modules/text-map/text-map';
 
 import FullScreenManager from '../modules/full-screen-manager/full-screen-manager';
+import ChromecastManager from '../modules/chromecast-manager/chromecast-manager';
 
 import LiveStateEngine from '../modules/playback-engine/live-state-engine';
 import KeyboardControls from '../modules/keyboard-control/keyboard-control';
@@ -49,6 +50,7 @@ export const modules: { [id: string]: any } = {
   TextMap,
 
   FullScreenManager,
+  ChromecastManager,
 
   LiveStateEngine,
   KeyboardControls,

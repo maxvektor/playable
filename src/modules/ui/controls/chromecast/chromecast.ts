@@ -13,17 +13,25 @@ import { ITooltipService } from '../../core/tooltip/types';
 import { IChromecaststButton, IChromecaststViewConfig } from './types';
 import { ITextMap } from '../../../text-map/types';
 import { IThemeService } from '../../core/theme';
+import { IChromecastManager } from '../../../chromecast-manager/types';
 
 export default class ChromecaststButton implements IChromecaststButton {
   static moduleName = 'chromecastButton';
   static View = View;
-  static dependencies = ['eventEmitter', 'textMap', 'tooltipService', 'theme'];
+  static dependencies = [
+    'eventEmitter',
+    'textMap',
+    'tooltipService',
+    'theme',
+    'chromecastManager',
+  ];
 
   private _eventEmitter: IEventEmitter;
   private _textMap: ITextMap;
   private _interceptor: KeyboardInterceptor;
   private _tooltipService: ITooltipService;
   private _theme: IThemeService;
+  private _chromecastManager: IChromecastManager;
 
   private _callback: Function;
 
@@ -35,16 +43,21 @@ export default class ChromecaststButton implements IChromecaststButton {
     textMap,
     tooltipService,
     theme,
+    chromecastManager,
   }: {
     eventEmitter: IEventEmitter;
     textMap: ITextMap;
     tooltipService: ITooltipService;
     theme: IThemeService;
+    chromecastManager: IChromecastManager;
   }) {
     this._eventEmitter = eventEmitter;
     this._textMap = textMap;
     this._theme = theme;
     this._tooltipService = tooltipService;
+    this._chromecastManager = chromecastManager;
+
+    console.log('this._chromecastManager', this._chromecastManager);
 
     this._bindCallbacks();
 
